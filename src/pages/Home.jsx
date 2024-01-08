@@ -1,8 +1,13 @@
 import React from 'react'
+import { Main } from '../componets/section/Main'
+
 
 const Home = () => {
   return (
-    <div>Home</div>
+	<Main>
+		Home
+	</Main>
+	
   )
 }
 

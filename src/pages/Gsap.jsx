@@ -1,9 +1,12 @@
 import React from 'react'
+import { Main } from '../componets/section/Main'
 
 const Gsap = () => {
-  return (
-    <div>Gsap</div>
-  )
+	return (
+		<Main>
+			Gsap
+		</Main>
+	)
 }
 
 export default Gsap

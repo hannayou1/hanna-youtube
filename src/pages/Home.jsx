@@ -2,12 +2,13 @@ import React from 'react'
 import { Main } from '../componets/section/Main'
 import { Today } from '../componets/contents/Today'
 import { Developer } from '../componets/contents/Developer'
-import { Webd } from '../componets/contents/Webd'
-import { Website } from '../componets/contents/Website'
-import { Gssap } from '../componets/contents/Gssap'
-import { Portfolio } from '../componets/contents/Portfolio'
-import { Youtube } from '../componets/contents/Youtube'
+import { VideoSlider } from '../componets/contents/video/VideoSlider'
 
+import {webdText} from '../data/webd'
+import {websiteText} from '../data/website'
+import {gsapText} from '../data/gssap'
+import {portfolioText} from '../data/portfolio'
+import {youtubeText} from '../data/youtube'
 
 const Home = () => {
   return (
@@ -17,12 +18,11 @@ const Home = () => {
 	>
 		<Today />
 		<Developer />
-		<Webd />
-		<Website />
-		<Gssap />
-		<Portfolio />
-		<Youtube />
-		
+		<VideoSlider videos={webdText} title='웹디자인기능사 준비는 이걸로!' id='webd'/>
+		<VideoSlider videos={websiteText} title='😛 웹표준 사이트 만들기 기초 다지기' id='website'/>
+		<VideoSlider videos={gsapText} title='🤓 GSAP 패럴랙스 효과를 하고 싶다면!' id='gsap'/>
+		<VideoSlider videos={portfolioText} title='🤗 포트폴리오 만드는 방법을 공유합니다.' id='portfolio'/>
+		<VideoSlider videos={youtubeText} title='😱 지금 이 코딩을 영상으로' id='youtube'/>
 	</Main>
 	
   )

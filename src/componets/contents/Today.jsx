@@ -35,3 +35,5 @@ export const Today = () => {
     </section>
   )
 }
+
+export default Today

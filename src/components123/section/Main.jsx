@@ -26,5 +26,3 @@ export const Main = (props) => {
     </HelmetProvider>
   )
 }
-
-export default Main

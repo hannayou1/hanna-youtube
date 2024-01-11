@@ -13,6 +13,7 @@ export const Search = () => {
         }
     }
 
+   
     return (
         <div id='search'>
             <div className='search__inner'>

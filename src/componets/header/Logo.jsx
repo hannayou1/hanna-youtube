@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-export const Logo = () => {
+export const Logo = ({toggleMenu}) => {
   return (
     <h1 className='header__logo'>
-        <a href='/'>
-            <em aria-hidden='true'></em>
+       <Link to='/'> 
+            <em aria-hidden='true' onClick={toggleMenu}></em>
             <span>webs<br />youtube</span>
-        </a>
+        </Link>
     </h1>
   )
 }

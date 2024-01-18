@@ -1,6 +1,6 @@
 body {
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--white500);
+    color: var(--black);
 }
 
 // 섹션 공통 요소
@@ -87,3 +87,9 @@ section{
     }
 
 }
+
+/* search box */
+.search_box {width: 200px; line-height: 38px; height: 100%; position: relative;}
+.search_box input {width: 100%; height: 28px; margin: 0; box-sizing: border-box; border: 1px solid #E1DFDD; border-radius: 3px; padding-right: 20px;}
+.search_box i {position: absolute; top: 53%; transform: translate(0, -50%); right: 5px; cursor: pointer;} 
+.search_box i:hover {color: #6264A7;}
